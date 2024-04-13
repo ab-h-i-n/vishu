@@ -12,6 +12,7 @@
     "canvas-confetti": "^1.9.2",
     "framer-motion": "^11.0.28",
     "next": "14.2.1",
+    "next-share": "^0.27.0",
     "pure-snow.js": "^2.1.0",
     "react": "^18",
     "react-dom": "^18"
