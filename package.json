@@ -15,6 +15,7 @@
     "next-share": "^0.27.0",
     "pure-snow.js": "^2.1.0",
     "react": "^18",
+    "react-audio-player": "^0.17.0",
     "react-dom": "^18"
   },
   "devDependencies": {
