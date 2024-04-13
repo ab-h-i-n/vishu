@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: "Happy Monkey", system-ui;
+}
+
 body{
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px; 
+    transform-origin: center bottom;
+    animation: fall 4s linear infinite;
+  }
+
+.confetti.circle {
+    clip-path: circle(50% at 50% 50%);
+}
+
+@keyframes fall {
+    to {
+      transform: translateY(100vh) rotate(720deg);
+    }
 }

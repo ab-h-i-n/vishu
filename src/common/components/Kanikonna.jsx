@@ -19,12 +19,12 @@ const Kanikonna = () => {
   return (
     <motion.div 
       initial={{x : '0%'}}
-      animate={{x : ['0%', '5%', '0%']}}
+      animate={{x : ['0%', '5%', '0%'], rotate : [0, 5, 0]}}
       transition={transitionProp1}
     >
       <motion.div
         initial={{ y: "-100%", opacity: 0 }}
-        animate={{ y: "0%", opacity: 1 }}
+        animate={{ y: "-10%", opacity: 1 }}
         transition={transitionProp2}
       >
         <img src="/images/kanikonna.png" />

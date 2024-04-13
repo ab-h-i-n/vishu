@@ -12,14 +12,14 @@ const Curtains = () => {
     <div>
       <motion.img
         src="/images/left_curtain.png"
-        className="h-screen fixed left-0"
+        className="h-screen fixed left-0 z-50"
         initial={{ x: '0%' }}
         animate={{ x: '-100%' }} 
         transition={ transitionProp } 
       />
       <motion.img
         src="/images/right_curtain.png"
-        className="h-screen fixed right-0"
+        className="h-screen fixed right-0 z-50"
         initial={{ x: '0%' }} 
         animate={{ x: '100%' }} 
         transition={ transitionProp } 

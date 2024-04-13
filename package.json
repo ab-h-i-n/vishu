@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.2",
     "framer-motion": "^11.0.28",
     "next": "14.2.1",
     "pure-snow.js": "^2.1.0",

@@ -11,11 +11,11 @@ const FruitBascket = () => {
     return (
         <motion.div
             className="fixed bottom-0  z-10"
-            initial={{ y :'100%', opacity : 0 , x : '-50%' }}
-            animate={{ y : '10%' , opacity : 1  }}
+            initial={{ y :'100%', opacity : 0 , x : '-30%' }}
+            animate={{ y : '15%' , opacity : 1  }}
             transition={ transitionProp }
         >
-            <img src="/images/fruit_bascket.png" />
+            <img src="/images/fruit_bascket.png" className="w-80" />
         </motion.div>
     );
 };
