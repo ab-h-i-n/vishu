@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect } from "react";
 import confetti from "canvas-confetti";
 import Curtains from "../components/Curtains";
@@ -9,8 +7,6 @@ import Krishnaa from "../components/Krishna";
 import HappyVishuText from "../components/HappyVishuText";
 
 const Home = () => {
-  const queryString = window.location.search;
-  const valueAfterQuestionMark = queryString.substring(1);
   var duration = 15 * 1000;
   var skew = 1;
 
@@ -44,7 +40,6 @@ const Home = () => {
   }
 
   useEffect(() => {
-    console.log(valueAfterQuestionMark);
     // Start confetti animation after 2 seconds
     const timeoutConfetti = setTimeout(startConfetti, 2000);
 
@@ -52,7 +47,7 @@ const Home = () => {
     return () => {
       clearTimeout(timeoutConfetti);
     };
-  }, [valueAfterQuestionMark]);
+  }, []);
 
   return (
     <div className="h-screen w-screen overflow-hidden">
@@ -60,7 +55,7 @@ const Home = () => {
       <FruitBascket />
       <Kanikonna />
       <Krishnaa />
-      <HappyVishuText text={valueAfterQuestionMark} />
+      <HappyVishuText />
     </div>
   );
 };
