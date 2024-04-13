@@ -1,12 +1,20 @@
-import React from 'react'
-import LeftCurtain from '../components/LeftCurtain'
+import Curtains from "../components/Curtains";
+import FruitBascket from "../components/FruitBascket";
+import Kanikonna from "../components/Kanikonna";
+import Krishnaa from "../components/Krishna";
 
 const Home = () => {
   return (
-    <div>
-        <LeftCurtain/>
-    </div>
-  )
-}
+    <div className="h-screen w-screen overflow-hidden">
+      <Curtains />
 
-export default Home
+      <FruitBascket />
+
+      <Kanikonna />
+
+      <Krishnaa />
+    </div>
+  );
+};
+
+export default Home;

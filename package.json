@@ -11,6 +11,7 @@
   "dependencies": {
     "framer-motion": "^11.0.28",
     "next": "14.2.1",
+    "pure-snow.js": "^2.1.0",
     "react": "^18",
     "react-dom": "^18"
   },
